@@ -1,21 +1,23 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import Navbar from "./Navbar"
+import logoMain from "../assets/images/near-sea.png"
+import "../assets/styles/index.css"
 
 function Home() {
   return (
-    <div className="text-center">
-      <img
-        src="https://coursereport-s3-production.global.ssl.fastly.net/uploads/school/logo/84/original/logo-ironhack-blue.png"
-        alt="ironhack logo"
-      />
-      <h1>React IronPlate</h1>
-      <p>This is the homepage</p>
-      <div className="d-flex flex-column align-items-center">
-        <Link className="btn btn-lg btn-primary" to="/auth/signup">
+    <div>
+    
+      <section className="section1 pb-5">
+      <Navbar/>
+  <div className="d-flex justify-content-center align-content-center">
+  <img src={logoMain} className="logoMain"></img>
+</div>
+      </section>
+        {/* <Link className="btn btn-lg btn-primary" to="/auth/signup">
           Signup here!
-        </Link>
+        </Link> */}
       </div>
-    </div>
   );
 }
 
