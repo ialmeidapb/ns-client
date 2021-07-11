@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import api from "../../apis/api";
+import Navbar from "../Navbar"
 
 function Signup(props) {
   const [state, setState] = useState({ name: "", password: "", email: "" });
@@ -31,11 +32,14 @@ function Signup(props) {
   }
 
   return (
+  <div className="signup-page">
+  <Navbar/>
     <form onSubmit={handleSubmit}>
       <h1>Signup!</h1>
 
       <div>
         <label htmlFor="signupFormName">Name</label>
+        <br/>
         <input
           type="text"
           name="name"
@@ -45,9 +49,10 @@ function Signup(props) {
           onChange={handleChange}
         />
       </div>
-
+<br/>
       <div>
         <label htmlFor="signupFormEmail">E-mail Address</label>
+        <br/>
         <input
           type="email"
           name="email"
@@ -57,9 +62,10 @@ function Signup(props) {
           onChange={handleChange}
         />
       </div>
-
+<br/>
       <div>
         <label htmlFor="signupFormPassword">Password</label>
+        <br/>
         <input
           type="password"
           name="password"
@@ -69,15 +75,16 @@ function Signup(props) {
           onChange={handleChange}
         />
       </div>
-
+<br/>
       <div>
-        <button type="submit">Signup!</button>
-
+        <button type="submit" className="btn btn-light bg-transparent signup-btn" >Signup!</button>
+<br/>
         <Link to="/auth/login">
           Already have an account? Click here to login.
         </Link>
       </div>
     </form>
+    </div>
   );
 }
 

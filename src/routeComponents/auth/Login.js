@@ -1,7 +1,7 @@
 import React, { useState, useContext } from "react";
 import { Link } from "react-router-dom";
 import api from "../../apis/api";
-
+import Navbar from "../Navbar"
 import { AuthContext } from "../../contexts/authContext";
 
 function Login(props) {
@@ -41,11 +41,14 @@ function Login(props) {
   }
 
   return (
-    <form onSubmit={handleSubmit}>
+    <div className="loginpage">
+    <Navbar/>
+<form onSubmit={handleSubmit}>
       <h1>Login</h1>
 
       <div>
         <label htmlFor="signupFormEmail">E-mail Address</label>
+        <br/>
         <input
           type="email"
           name="email"
@@ -53,11 +56,13 @@ function Login(props) {
           value={state.email}
           error={errors.email}
           onChange={handleChange}
+      
         />
       </div>
-
+<br/>
       <div>
         <label htmlFor="signupFormPassword">Password</label>
+        <br/>
         <input
           type="password"
           name="password"
@@ -67,15 +72,19 @@ function Login(props) {
           onChange={handleChange}
         />
       </div>
+      <br/>
+    
 
       <div>
-        <button type="submit">Login!</button>
-
+        <button type="submit" className="btn btn-dark bg-transparent loginbtn">Login!</button>
+<br/>
         <Link to="/auth/signup">
           Don't have an account? Click here to signup!
         </Link>
       </div>
     </form>
+    </div>
+    
   );
 }
 

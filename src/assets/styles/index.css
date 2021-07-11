@@ -1,17 +1,30 @@
 /* Seus estilos globais vão aqui */
 
-.titleMain{
-    position: absolute;
-    top:240px;
-    color: #2980B9;
+@font-face {
+    font-family: brixton;
+    src: url(../styles/BrixtonSansLt.ttf)
+  }
+
+*{
+font-family: brixton;
+font-weight: lighter;
+color: black !important; 
+overflow: hidden;
+}
+
    
+
+.navbar-title{
+    font-family: brixton;
+    color:black;
+    text-decoration: none;
+
 }
 
 
-
 .section1{
-    background-color: #EBDEF0  ;
-    height: 40rem;
+    background-color: #A09ED6   ;
+    height: 50rem;
     width: 100%;
 }
 
@@ -20,4 +33,46 @@
     font-size: 20px;
 }
 
+.logoMain{
+    padding-top: 100px;
     
+}
+
+.loginpage{
+background-color: #6F5495 ;
+width: auto;
+height: 50rem;
+
+}    
+
+.loginpage form{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 100px;
+}
+
+.loginbtn{
+    margin-left: 110px;
+    margin-bottom: 10px;
+}
+
+.signup-page{
+background-color: #F68FA0 ;
+width: auto;
+height: 50rem;
+}
+
+.signup-page form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 100px;
+}
+
+.signup-btn{
+    margin-left: 110px;
+    margin-bottom: 10px;
+}

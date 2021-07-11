@@ -1,7 +1,7 @@
 import { NavLink, Link } from "react-router-dom";
 import { useContext } from "react";
 import logo from "../assets/images/logo-main.png"
-
+import "../assets/styles/index.css"
 import { AuthContext } from "../contexts/authContext";
 
 function Navbar() {
@@ -11,7 +11,7 @@ function Navbar() {
     <div className="allNavbar">
       <nav className="navbar navbar-expand bg-transparent d-flex ">
         <NavLink className="navbar-brand d-inline d-flex nearsea" to="/">
-          <img src={logo} style={{width:"65px", height:"40px"}}/> <p className="pt-2" >NearSea Audio</p>
+          <img src={logo} style={{width:"65px", height:"40px"}}/> <p className="pt-2 navbar-title" >Near Sea Audio</p>
         </NavLink>
 
         <button
@@ -44,14 +44,14 @@ function Navbar() {
                 >
                   &nbsp; <text className="loginText">Logout</text>
                 </Link>
-                <div variant="transparent">
-                  &nbsp; &nbsp; &nbsp;
+                
+                  
                   <img
                     src={`https://ui-avatars.com/api/?name=${loggedInUser.user.name}&size=32&background=random`}
                     className="rounded-circle"
                     alt="Profile"
                   />
-                </div>
+                
               </div>
             ) : (
               <NavLink
@@ -59,7 +59,7 @@ function Navbar() {
                 activeClassName="active"
                 to="/auth/login"
               >
-                <button type="button" class="btn btn-primary">Login</button>
+                <button type="button" class="btn btn-dark bg-transparent text-black">Login</button>
               </NavLink>
             )}
           </div>
