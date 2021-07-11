@@ -35,14 +35,16 @@ function Navbar() {
                   <text className="loginText">|</text>
                 </Link>
                 <Link
+                
                   onClick={(event) => {
                     event.preventDefault();
                     // Fazendo processo de Logout
                     setLoggedInUser({ user: {}, token: "" });
                     localStorage.removeItem("loggedInUser");
                   }}
+
                 >
-                  &nbsp; <text className="loginText">Logout</text>
+                  &nbsp;<a href="/" className="loginText">Logout</a>
                 </Link>
                 
                   

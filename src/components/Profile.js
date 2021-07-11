@@ -54,7 +54,9 @@ function Profile() {
                 <p className="mb-0">
                   <strong>Audios Uploded:</strong> {state.uploads.length}
                 </p>
-                
+                <br/>
+                <Link to={`/audio`}>
+                <button type="button" className="btn btn-primary btn-lg btn-block">Add a New Audio</button></Link>
               </div>
             </div>
           </div>
