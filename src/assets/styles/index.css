@@ -1,51 +1,45 @@
 /* Seus estilos globais vão aqui */
 
 @font-face {
-    font-family: brixton;
-    src: url(../styles/BrixtonSansLt.ttf)
-  }
-
-*{
-font-family: brixton;
-font-weight: lighter;
-color: black !important; 
-overflow: hidden;
+  font-family: brixton;
+  src: url(../styles/BrixtonSansLt.ttf);
 }
 
-   
-
-.navbar-title{
-    font-family: brixton;
-    color:black;
-    text-decoration: none;
-
+* {
+  font-family: brixton;
+  font-weight: lighter;
+  color: black !important;
+  overflow: hidden;
 }
 
-
-.section1{
-    background-color: #A09ED6   ;
-    height: 50rem;
-    width: 100%;
+.navbar-title {
+  font-family: brixton;
+  color: black;
+  text-decoration: none;
 }
 
-.loginText{
-    padding-right: 30px;
-    font-size: 20px;
+.section1 {
+  background-color: #a09ed6;
+  height: 50rem;
+  width: 100%;
 }
 
-.logoMain{
-    padding-top: 100px;
-    
+.loginText {
+  padding-right: 30px;
+  font-size: 20px;
 }
 
-.loginpage{
-background-color: #6F5495 ;
-width: auto;
-height: 50rem;
+.logoMain {
+  padding-top: 100px;
+}
 
-}    
+.loginpage {
+  background-color: #6f5495;
+  width: auto;
+  height: 50rem;
+}
 
-.loginpage form{
+.loginpage form {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -53,26 +47,32 @@ height: 50rem;
   margin-top: 100px;
 }
 
-.loginbtn{
-    margin-left: 110px;
-    margin-bottom: 10px;
+.loginbtn {
+  margin-left: 110px;
+  margin-bottom: 10px;
 }
 
-.signup-page{
-background-color: #F68FA0 ;
-width: auto;
-height: 50rem;
+.signup-page {
+  background-color: #f68fa0;
+  width: auto;
+  height: 50rem;
 }
 
-.signup-page form{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    margin-top: 100px;
+.signup-page form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 100px;
 }
 
-.signup-btn{
-    margin-left: 110px;
-    margin-bottom: 10px;
+.signup-btn {
+  margin-left: 110px;
+  margin-bottom: 10px;
+}
+
+.allSection {
+  background-color: #00B0B2;
+  width: auto;
+  height: 50rem;
 }
